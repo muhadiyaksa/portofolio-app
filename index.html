@@ -14,6 +14,13 @@
 
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+    <!-- BOOTSTRAP ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+
+    <!-- ANIMASI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <title>Muh.adiyaksa</title>
   </head>
   <body>
@@ -29,7 +36,7 @@
             <a class="nav-link hoverlink" href="#certificate">Certificate</a>
             <a class="nav-link hoverlink" href="#experience">Experience</a>
           </div>
-          <a class="nav-link"><button class="btn tombolungu rounded-pill text-white px-4 py-2">Contact Me</button></a>
+          <a href="#contactme" class="nav-link"><button class="btn tombolungu rounded-pill text-white px-4 py-2">Contact Me</button></a>
         </div>
       </div>
     </nav>
@@ -46,7 +53,7 @@
           <div class="col-lg imageprofile">
             <img src="image/muhadiyaksa.png" alt="Muhamad Adi Yaksa" />
             <button class="btn tombol py-2 px-4 rounded-pill bg-white location">East Jakarta</button>
-            <button class="btn tombol py-2 px-4 rounded-pill bg-white profesi">Front End Developer</button>
+            <button class="btn tombol py-2 px-4 rounded-pill bg-white profesi">Web Developer</button>
             <button class="btn tombol py-2 px-4 rounded-pill bg-white usia">21 th</button>
           </div>
         </div>
@@ -77,214 +84,292 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="row aboutme">
-        <div class="col-lg vector">
-          <img src="image/aboutme.png" alt="About Me" />
-        </div>
-        <div class="col-lg-7 mx-auto konten">
-          <h1><span class="ungu">About</span><span class="oren"> Me</span></h1>
-          <p>
-            I am a student of the Faculty of Engineering, majoring in informatics, Universitas Muhammadiyah Prof. Dr. HAMKA, I master the field of web development especially Front End Developer using html, css and javascript with React JS
-            framework
-          </p>
-          <button class="btn tombolungu px-4 py-2 rounded-pill text-white mt-3">Contact Me</button>
-        </div>
-      </div>
-    </div>
+    <section id="about">
+      <img src="icon/hiasan1.png" alt="hiasan" class="img-fluid hiasan" />
 
-    <div class="kotak kotakungu"></div>
-
-    <div class="container" id="portofolio">
-      <div class="row">
-        <div class="col-lg porto">
-          <img src="icon/portfolio.png" alt="" class="judul" />
-          <h1><span class="ungu">My </span><span class="oren">Portofolio</span></h1>
-          <p>
-            The results of the projects I have worked on are both<br />
-            in the form of web and code.
-          </p>
-          <div class="itemicon">
-            <img src="icon/webporto.png" alt="" class="me-3" />
-            <img src="icon/github.png" alt="" />
-          </div>
-        </div>
-        <div class="col-lg">
-          <h4><span class="ungu">WEB</span> Version</h4>
-          <div class="portoweb mb-4">
-            <div class="itemporto mb-4">
-              <img src="icon/webporto.png" alt="" />
-              <a href="https://mathcycle.herokuapp.com" target="blank" class="text-dark">mathcycle.herokuapp.com</a>
-            </div>
-            <div class="itemporto text-dark">
-              <img src="icon/webporto.png" alt="" />
-              <a href="https://elcindonesia.epizy.com" target="blank" class="text-dark">elcindonesia.epizy.com</a>
-            </div>
-          </div>
-          <h4><span class="oren">CODE</span> Version</h4>
-          <div class="portoweb">
-            <div class="itemporto">
-              <img src="icon/github.png" alt="" />
-              <a href="https://github.com/muhadiyaksa" target="blank" class="text-dark">github.com/muhadiyaksa</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="kotak kotakoren"></div>
-
-    <div class="container" id="experience">
-      <div class="row workexperience">
-        <div class="col-lg work">
-          <div class="row">
-            <div class="col-lg-2">
-              <img src="icon/workitem.png" alt="" class="small" />
-            </div>
-            <div class="col-lg-7">
-              <h5 class="fw-bold">PT. NIAGA BUANA SOLUSI UTAMA</h5>
-              <p>April - Juli 2021</p>
-              <ul class="ungu">
-                <li>WordPress Development</li>
-                <li>Web Administrator</li>
-                <li>Graphic Designer</li>
-              </ul>
-            </div>
-            <div class="col-lg-3">
-              <p class="bingkaioren">3 Bulan</p>
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-lg-2">
-              <img src="icon/workitem.png" alt="" class="small" />
-            </div>
-            <div class="col-lg-7">
-              <h5 class="fw-bold">PT. LAMINATECH KREASI SARANA</h5>
-              <p>September - Desember 2016</p>
-              <ul class="ungu">
-                <li>QC</li>
-                <li>Logistiv Officer</li>
-              </ul>
-            </div>
-            <div class="col-lg-3">
-              <p class="bingkaioren">3 Bulan</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg experience">
-          <img src="icon/workexperience.png" alt="Work Experience" class="judul" />
-          <h1><span class="ungu">My </span><span class="oren">Experience</span></h1>
-          <p>Some work experience I have done</p>
-          <div class="itemicon">
-            <span class="fw-bold">WFH / WFO</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="kotak kotakungu"></div>
-
-    <div class="kotaksertif" id="certificate">
       <div class="container">
-        <div class="row certificate">
-          <div class="col-lg text-center pt-5 mb-5">
-            <img src="icon/certificate.png" alt="" class="judul" />
-            <h1><span class="ungu">My </span><span class="oren">Certificate</span></h1>
-            <p>several certificates that I have received <br />both from training and exams</p>
+        <div class="row aboutme">
+          <div class="col-lg vector animate__animated">
+            <img src="image/aboutme.png" alt="About Me" />
+          </div>
+          <div class="col-lg-7 mx-auto konten animate__animated">
+            <h1><span class="ungu">About</span><span class="oren"> Me</span></h1>
+            <p>
+              I am a student of the Faculty of Engineering, majoring in informatics, Universitas Muhammadiyah Prof. Dr. HAMKA, student who has Front End Development skills with HTML / HTML5, CSS / CSS3 (Framework Bootstrap) and JAVASCRIPT
+              (Jquery, React Js) and Back-End Development with Node Js, Express Js and Mongo DB for the realization of the website and can configure GIT.
+            </p>
+            <button class="btn tombolungu px-4 py-2 rounded-pill text-white mt-3">Contact Me</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portofolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg porto">
+            <img src="icon/portfolio.png" alt="" class="judul" />
+            <h1><span class="ungu">My </span><span class="oren">Portofolio</span></h1>
+            <p>
+              The results of the projects I have worked on are both<br />
+              in the form of web and code.
+            </p>
             <div class="itemicon">
-              <span class="fw-bold">^_^</span>
+              <img src="icon/webporto.png" alt="" class="me-3" />
+              <img src="icon/github.png" alt="" />
             </div>
           </div>
-          <div class="col-lg certif">
-            <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="image/sertif_kompetensi_jwb.png" class="d-block" alt="sertif kompetensi" />
-                </div>
-                <div class="carousel-item">
-                  <img src="image/sertif_javascript.png" class="d-block w-100" alt="sertif javascript" />
-                </div>
-                <div class="carousel-item">
-                  <img src="image/sertif_htmlcss.png" class="d-block w-100" alt="sertif html css" />
-                </div>
+          <div class="col-lg">
+            <h4><span class="ungu">WEB</span> Version</h4>
+            <div class="portoweb mb-4 bg-white">
+              <div class="itemporto">
+                <img src="icon/webporto.png" alt="" />
+                <a href="https://mathcycle.herokuapp.com" target="blank" class="text-dark">mathcycle.herokuapp.com</a>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+            </div>
+            <h4><span class="oren">CODE</span> Version</h4>
+            <div class="portoweb bg-white">
+              <div class="itemporto">
+                <img src="icon/github.png" alt="" />
+                <a href="https://github.com/muhadiyaksa" target="blank" class="text-dark">github.com/muhadiyaksa</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="container">
-      <div class="row pt-5 contactme">
-        <div class="col-lg kontak">
-          <table>
-            <tr>
-              <td>
-                <img src="icon/whatsapp.png" alt="whatsapp" />
-              </td>
-              <td>
-                <a href="https://wa.me/+6287893319521" target="blank">Muhamad Adi Yaksa</a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img src="icon/gmail.png" alt="gmail" />
-              </td>
-              <td>
-                <a href="mailto:muhadiyaksa@gmail.com" target="blank">muhadiyaksa@gmail.com</a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img src="icon/linkedin.png" alt="linkedin" />
-              </td>
-              <td>
-                <a href="https://linkedin.com/in/muhadiyaksa" target="blank">Muhamad Adi Yaksa</a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img src="icon/instagram.png" alt="instagram" />
-              </td>
-              <td>
-                <a href="https://instagram.com/muhadi_yaksa" target="blank">@muhadi_yaksa</a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img src="icon/twitter.png" alt="twitter" />
-              </td>
-              <td>
-                <a href="https://twitter.com/muhadi_yaksa" target="blank">@muhadi_yaksa</a>
-              </td>
-            </tr>
-          </table>
-
-          <a href=""></a>
+    <section id="project">
+      <img src="icon/hiasan2.png" alt="hiasan" class="img-fluid hiasan-sec" />
+      <div class="container">
+        <div class="batas">
+          <div class="garis"></div>
+          <h3 class="ungu">My Active Project</h3>
         </div>
-        <div class="col-lg text-center pt-4">
-          <img src="icon/contactme.png" alt="contactme" class="judul" />
-          <h1><span class="ungu">Contact</span><span class="oren"> Me</span></h1>
-          <p>contact the listed contact if you need me.</p>
-          <div class="itemicon">
-            <span class="fw-bold">Find Me</span>
+        <div class="row">
+          <div class="col-md-8">
+            <p class="keterangan">
+              This is called <strong class="ungu">Tongkrongin</strong> , a website-based application that is used to order places and food at cafes in the Jakarta-Depok-Bekasi area. This Project for final project for the "Project
+              Implementation" course.
+            </p>
+            <button class="tombolungu py-2 px-4 border-0 rounded-pill mb-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Details</button>
+          </div>
+          <div class="col-md-7"></div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-md image animate__animated">
+            <img src="image/proyek1.png" alt="proyek1" class="img-fluid" />
+          </div>
+          <div class="col-md image animate__animated">
+            <img src="image/proyek3.png" alt="proyek1" class="img-fluid" />
+          </div>
+          <div class="col-md image animate__animated">
+            <img src="image/proyek4.png" alt="proyek1" class="img-fluid" />
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- <div class="kotak kotakoren"></div> -->
+
+    <section id="experience">
+      <div class="container">
+        <div class="row">
+          <div class="col-md experience">
+            <img src="icon/workexperience.png" alt="Work Experience" class="judul" />
+            <h1><span class="ungu">My </span><span class="oren">Experience</span></h1>
+            <p>Some work experience I have done</p>
+            <div class="itemicon">
+              <span class="fw-bold">WFH / WFO</span>
+            </div>
+          </div>
+          <div class="col-md work">
+            <div class="row">
+              <div class="col-lg-2">
+                <img src="icon/workitem.png" alt="" class="small" />
+              </div>
+              <div class="col-lg-7">
+                <h5 class="fw-bold">PT. NIAGA BUANA SOLUSI UTAMA</h5>
+                <p>April - Juli 2021</p>
+                <ul class="ungu">
+                  <li>WordPress Development</li>
+                  <li>Web Administrator</li>
+                  <li>Graphic Designer</li>
+                </ul>
+              </div>
+              <div class="col-lg-3">
+                <p class="bingkaioren">3 Bulan</p>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-lg-2">
+                <img src="icon/workitem.png" alt="" class="small" />
+              </div>
+              <div class="col-lg-7">
+                <h5 class="fw-bold">PT. LAMINATECH KREASI SARANA</h5>
+                <p>September - Desember 2016</p>
+                <ul class="ungu">
+                  <li>QC</li>
+                  <li>Logistiv Officer</li>
+                </ul>
+              </div>
+              <div class="col-lg-3">
+                <p class="bingkaioren">3 Bulan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificate">
+      <div class="kotaksertif">
+        <div class="container">
+          <div class="batas">
+            <div class="garis"></div>
+            <h3 class="ungu">My Certificates</h3>
+          </div>
+          <div class="row">
+            <div class="col-md-8">
+              <p class="keterangan">several certificates that I have received both from training and exams</p>
+            </div>
+            <div class="col-md-7"></div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-md image animate__animated">
+              <img src="image/bpptik.jpg" alt="proyek1" class="img-fluid" />
+            </div>
+            <div class="col-md image animate__animated">
+              <img src="image/SertifPrlatihn.jpg" alt="proyek1" class="img-fluid" />
+            </div>
+            <div class="col-md image animate__animated">
+              <img src="image/sertifJuara1.jpg" alt="proyek1" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contactme">
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-md text-center pt-4">
+            <img src="icon/contactme.png" alt="contactme" class="judul" />
+            <h1><span class="ungu">Contact</span><span class="oren"> Me</span></h1>
+            <p>contact the listed contact if you need me.</p>
+            <div class="itemicon">
+              <span class="fw-bold">Find Me</span>
+            </div>
+          </div>
+          <div class="col-md kontak">
+            <table>
+              <tr>
+                <td>
+                  <h2><i class="bi bi-whatsapp"></i></h2>
+                </td>
+                <td>
+                  <a href="https://wa.me/+6287893319521" target="blank">Muhamad Adi Yaksa</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h2><i class="bi bi-envelope"></i></h2>
+                </td>
+                <td>
+                  <a href="mailto:muhadiyaksa@gmail.com" target="blank">muhadiyaksa@gmail.com</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h2><i class="bi bi-linkedin"></i></h2>
+                </td>
+                <td>
+                  <a href="https://linkedin.com/in/muhadiyaksa" target="blank">Muhamad Adi Yaksa</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h2><i class="bi bi-instagram"></i></h2>
+                </td>
+                <td>
+                  <a href="https://instagram.com/muhadi_yaksa" target="blank">@muhadi_yaksa</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h2><i class="bi bi-twitter"></i></h2>
+                </td>
+                <td>
+                  <a href="https://twitter.com/muhadi_yaksa" target="blank">@muhadi_yaksa</a>
+                </td>
+              </tr>
+            </table>
+
+            <a href=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <div class="footer">
       <div class="container">
         <p>Thank You</p>
         <p>Regards, Muhamad Adi Yaksa</p>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <tr>
+                <td>Name</td>
+                <td>:</td>
+                <td>Tongkrongin</td>
+              </tr>
+              <tr>
+                <td>Time</td>
+                <td>:</td>
+                <td>Oktober - Now</td>
+              </tr>
+              <tr>
+                <td>Job Desc</td>
+                <td>:</td>
+                <td>Full Stack WEB Developer</td>
+              </tr>
+              <tr>
+                <td>Technologies</td>
+                <td>:</td>
+                <td>HTML5, CSS3, Bootstrap ,JavaScript, EJS , Express Js, Node Js, Mongo DB</td>
+              </tr>
+              <tr>
+                <td>Team</td>
+                <td>:</td>
+                <td>Muhamad Adi Yaksa (Web Developer) , Muhamad Rinaldi (UI/UX Designer) , Rismawati (Scrum Master), Supriatman (QA)</td>
+              </tr>
+              <tr>
+                <td>Description</td>
+                <td>:</td>
+                <td>
+                  This is called Tongkrongin, a website-based application that is used to order places such as seats with different categories of seats as well as food at cafes in the Jakarta-Depok-Bekasi area. The application aims to help
+                  the problems of visitors at a cafe who often find the table is full. This project was created using the Node Js, Express Js and Mongo DB stack as the final project for the "Project Implementation" course.
+                </td>
+              </tr>
+              <tr>
+                <td>Link</td>
+                <td>:</td>
+                <td>
+                  <a href="https://github.com/muhadiyaksa/tongkrongin">Check Code From Tongkrongin</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   </body>
