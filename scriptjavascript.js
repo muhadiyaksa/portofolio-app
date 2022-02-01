@@ -73,47 +73,68 @@ const about = document.getElementById("about");
 const imageAbout = about.querySelector(".vector");
 const contentAbout = about.querySelector(".konten");
 
-const project = document.getElementById("project");
-const imageProject = project.querySelectorAll(".image");
+// const project = document.getElementById("project");
+// const imageProject = project.querySelectorAll(".image");
 
-const sertif = document.getElementById("certificate");
-const imageSertif = sertif.querySelectorAll(".image");
+// const sertif = document.getElementById("certificate");
+// const imageSertif = sertif.querySelectorAll(".image");
 
 let posisiAbout = about.getBoundingClientRect().top - about.getBoundingClientRect().height;
-let posisiProject = project.getBoundingClientRect().top - project.getBoundingClientRect().height;
-let posisiSertif = sertif.getBoundingClientRect().top - sertif.getBoundingClientRect().height;
+// let posisiProject = project.getBoundingClientRect().top - project.getBoundingClientRect().height;
+// let posisiSertif = sertif.getBoundingClientRect().top - sertif.getBoundingClientRect().height;
 
 document.addEventListener("scroll", function () {
   let windowPs = window.scrollY;
-  console.log(windowPs);
   if (windowPs >= posisiAbout) {
     imageAbout.classList.add("animate__fadeInLeft");
     contentAbout.classList.add("animate__fadeInRight");
   }
-  if (windowPs >= posisiProject) {
-    imageProject.forEach((el, i) => {
-      if (i >= 1) {
-        setTimeout(function () {
-          el.classList.add("animate__fadeInUp");
-          el.style.visibility = "visible";
-        }, 300 * i);
-      } else {
-        el.classList.add("animate__fadeInUp");
-        el.style.visibility = "visible";
-      }
-    });
-  }
-  if (windowPs >= posisiSertif) {
-    imageSertif.forEach((el, i) => {
-      if (i >= 1) {
-        setTimeout(function () {
-          el.classList.add("animate__slideInUp");
-          el.style.visibility = "visible";
-        }, 300 * i);
-      } else {
-        el.classList.add("animate__slideInUp");
-        el.style.visibility = "visible";
-      }
-    });
-  }
+  // if (windowPs >= posisiProject) {
+  //   imageProject.forEach((el, i) => {
+  //     if (i >= 1) {
+  //       setTimeout(function () {
+  //         el.classList.add("animate__fadeInUp");
+  //         el.style.visibility = "visible";
+  //       }, 300 * i);
+  //     } else {
+  //       el.classList.add("animate__fadeInUp");
+  //       el.style.visibility = "visible";
+  //     }
+  //   });
+  // }
+  // if (windowPs >= posisiSertif) {
+  //   imageSertif.forEach((el, i) => {
+  //     if (i >= 1) {
+  //       setTimeout(function () {
+  //         el.classList.add("animate__slideInUp");
+  //         el.style.visibility = "visible";
+  //       }, 300 * i);
+  //     } else {
+  //       el.classList.add("animate__slideInUp");
+  //       el.style.visibility = "visible";
+  //     }
+  //   });
+  // }
 });
+
+function animateGrid() {
+  const javascript = document.querySelector(".javascript");
+  const react = document.querySelector(".react");
+  const sass = document.querySelector(".sass");
+  const css = document.querySelector(".css");
+  const boot = document.querySelector(".boot");
+  const tailwind = document.querySelector(".tailwind");
+  const nodejs = document.querySelector(".nodejs");
+  const express = document.querySelector(".express");
+  const git = document.querySelector(".git");
+  const public = document.querySelector(".javascript");
+
+  // javascript.style.animationDelay = '3s';
+  // setTimeout(() => {
+  //   javascript.classList.remove("row-3");
+  //   javascript.style.transform = "translateY(-10px)";
+  //   javascript.classList.add("row-2");
+  // }, 2000);
+}
+
+// animateGrid();

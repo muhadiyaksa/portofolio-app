@@ -1,0 +1,860 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+/* KELAS CSS */
+
+.tombolungu,
+.tombol {
+  /* box-shadow: 0px 2px 15px 1px #aea8ff; */
+  transition: 0.3s !important;
+  font-weight: 600;
+}
+.tombolungu:hover,
+.tombol:hover {
+  /* box-shadow: 0px 2px 5px 1px #aea8ff; */
+  transform: scale(1.05);
+}
+.tombolungu {
+  border: 2px solid #a8aeff !important;
+  color: #a8aeff !important;
+  position: relative;
+  overflow: hidden;
+}
+.tombolungu::after {
+  content: "";
+  display: block;
+  width: 125%;
+  height: 100%;
+  transform: skewX(20deg);
+  background-color: #a8aeff;
+  position: absolute;
+  left: -125%;
+  top: 0px;
+  transition: 0.3s;
+  z-index: -1;
+}
+.tombolungu:hover::after {
+  left: -5%;
+  color: #1e1e1e !important;
+}
+.tombolungu:hover {
+  color: #1e1e1e !important;
+}
+@keyframes geserButton {
+  to {
+    left: 0px;
+  }
+}
+.ungu {
+  color: #907cff !important;
+  font-weight: 600 !important;
+}
+.oren {
+  color: #ffbb0b !important;
+  font-weight: 600 !important;
+}
+.kotak {
+  width: 50%;
+  height: 8px;
+  border-radius: 10px;
+  margin: 80px auto;
+}
+.kotakoren {
+  background-color: #ffbb0b;
+}
+.kotakungu {
+  background-color: #b67cff;
+}
+img.small {
+  max-width: 42px;
+}
+.bingkaioren {
+  background-color: #ffbb0b;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-align: center;
+}
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 55px;
+  grid-auto-flow: dense;
+  row-gap: 10px;
+  column-gap: 10px;
+  position: relative;
+  z-index: 3;
+  color: white;
+}
+.container-grid .column-1 {
+  grid-column-end: span 1;
+}
+.container-grid .column-2 {
+  grid-column-end: span 2;
+}
+.container-grid .column-3 {
+  grid-column-end: span 3;
+}
+.container-grid .column-4 {
+  grid-column-end: span 4;
+}
+.container-grid .column-5 {
+  grid-column-end: span 5;
+}
+.container-grid .column-6 {
+  grid-column-end: span 6;
+}
+.container-grid .row-1 {
+  grid-row-end: span 1;
+}
+.container-grid .row-2 {
+  grid-row-end: span 2;
+}
+.container-grid .row-3 {
+  grid-row-end: span 3;
+}
+.container-grid .row-4 {
+  grid-row-end: span 4;
+}
+.container-grid .row-5 {
+  grid-row-end: span 5;
+}
+.container-grid .row-6 {
+  grid-row-end: span 6;
+}
+.container-grid .row-7 {
+  grid-row-end: span 7;
+}
+.container-grid .row-8 {
+  grid-row-end: span 8;
+}
+/* ------------------------------------------------------------------------------------------------------ */
+/* STYLE CSS */
+
+/* NAVBAR */
+.navbar {
+  background-color: #1e1e1e;
+  min-height: 80px;
+  position: relative;
+}
+.hoverlink {
+  margin: 0px 20px;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* JUMBOTRON */
+.jumbotron {
+  /* background-image: linear-gradient(to bottom, rgb(250, 250, 250), white); */
+  background-image: linear-gradient(to top, #1e1e1e, #121212);
+  /* background-color: #1e1e1e; */
+  color: white;
+  padding-top: 40px;
+  /* margin-bottom: 80px; */
+  position: relative;
+  height: 100%;
+}
+.jumbotron .kotak2 {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  bottom: 0;
+  width: 5%;
+  height: 100%;
+  background-color: rgba(200, 200, 200, 0.1);
+  /* animation: geserKotak 2s infinite; */
+}
+.jumbotron .animate-text h2:nth-child(1) { animation-delay: 0s; }
+.jumbotron .animate-text h2:nth-child(2) { animation-delay: 3s; }
+.jumbotron .animate-text h2:nth-child(3) { animation-delay: 6s; }
+.jumbotron .animate-text h2{
+  opacity: 0;
+  overflow: hidden;
+  animation: animate 9s linear infinite 0s;
+}
+@-webkit-keyframes animate {
+  0%  { opacity: 0; }
+  10%  { opacity: 0; -webkit-transform: translateY(-30px); }
+  15%  { opacity: 1; -webkit-transform: translateY(0px); }
+  20% { opacity: 1; -webkit-transform: translateY(0px); }
+  25% { opacity: 0; -webkit-transform: translateY(30px); }
+}
+
+.myprofile {
+  text-align: center;
+  padding-top: 80px;
+}
+.myprofile h1 {
+  font-size: 54px;
+}
+.myprofile p {
+  font-size: 18px;
+}
+.myprofile button {
+  margin-top: 20px;
+}
+.imageprofile {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.imageprofile img {
+  max-width: 370px;
+  transition: 0.3s;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  /* margin-left: 50px; */
+}
+/* .imageprofile img:hover {
+  transform: scale(1.02);
+} */
+
+.imageprofile h1 {
+  position: absolute;
+  z-index: 0;
+  top: 0px;
+  left: 0;
+  right: 0; 
+  font-size: 82px;
+  opacity: 0.1;
+  font-weight: 300;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+.imageprofile span{
+  font-size: 90px;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.1;
+  top: 90px;
+  font-weight: 300;
+  left: 0;
+  right: 0;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+.imageprofile h2{
+  font-size: 32px;
+  position: absolute;
+  z-index: 3;
+  bottom: 10px;
+  left: 30%;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+/* .imageprofile button.location {
+  top: 250px;
+  right: 30px;
+}
+.imageprofile button.profesi {
+  top: 350px;
+  left: 50px;
+}
+
+.imageprofile button.usia {
+  top: 150px;
+  left: 50px; */
+}
+/* ------------------------------------------------------------------------------------------------------ */
+/* PANEL */
+#navcenter{
+  /* background-image: linear-gradient(to top, #1e1e1e, #121212); */
+  background-color: red;
+  padding: 20px 0;
+}
+#infopanel {
+  background-image: linear-gradient(to bottom, #1e1e1e, #121212);
+  z-index: 3;
+  position: relative;
+}
+.kotakpanel{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 10%;
+  height: 100%;
+  background-color: rgba(200, 200, 200, 0.1);
+}
+.panel img.iconPanel {
+  max-width: 12px!important;
+}
+.panel {
+  /* box-shadow: 0px 2px 15px 1px #cea8ff; */
+  border: 2px solid #cea8ff;
+  height: 300px;
+  border-radius: 40px;
+  line-height: 80px;
+  text-align: center;
+}
+.panel a {
+  color: #cea8ff;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+.panel a:hover {
+  color: white;
+}
+.panel span {
+  display: none;
+}
+.pembatas {
+  position: relative;
+}
+.isi {
+  position: absolute;
+  top: -5px;
+  right: -60px;
+  width: 8px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #ffbb0b;
+}
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* ABOUTME */
+#about {
+  background-image: linear-gradient(to bottom, #1e1e1e, #121212);
+  padding: 60px 0px;
+  overflow: hidden;
+  position: relative;
+}
+#about .kotak2 {
+  position: absolute;
+  bottom: 0;
+  opacity: 0.1;
+  right: 0;
+  background-color: white;
+  opacity: 0.1;
+  width: 5%;
+  height: 50%;
+}
+.aboutme {
+  padding-top: 100px;
+}
+.aboutme img {
+  max-width: 450px;
+}
+.aboutme .konten {
+  padding-top: 10px;
+}
+.aboutme .kotakgrid {
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.aboutme .kotakgrid::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #a8aeff;
+  color: #1e1e1e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(-125%) skewX(20deg);
+  transition: 0.3s;
+  z-index: -1;
+}
+.aboutme .kotakgrid:hover::after {
+  transform: translateX(0%) ;
+}
+.aboutme .kotakgrid:hover{
+  color: #1e1e1e;
+}
+.aboutme .konten {
+  text-align: center;
+  padding-left: 50px;
+  align-self: center;
+}
+.aboutme .konten p {
+  font-family: 'Poppins', sans-serif;
+  /* text-align: justify; */
+  margin: 0;
+  font-size: 14px;
+  margin-bottom: 20px;
+  padding-right: 100px;
+  font-weight: 300!important;
+  color: white;
+}
+.aboutme .konten table{
+  color: white;
+  margin-top: 30px;
+}
+.aboutme .konten td{
+  padding-right: 100px;
+}
+/* ------------------------------------------------------------------------------------------------------ */
+/* PORTOFOLIO */
+#portofolio,
+#experience {
+  background-image: linear-gradient(to top, #1e1e1e, #121212);
+  padding: 60px 0px;
+  position: relative;
+}
+#portofolio .kotakporto{
+  position: absolute;
+  left: 0;
+  top: 80px;
+  height: 70%;
+  width: 50px;
+  background-color: rgba(200,200,200, 0.1);
+  border-radius: none;
+}
+.portoitems .card{
+  background-image: linear-gradient(to top, #1e1e1e, #121212);
+  border: 2px solid white;
+  padding: 10px;
+  color: white;
+  position: relative;
+}
+.portoitems .card p{
+  font-size: 14px;
+}
+.portoitems .card .info,
+.portoitems .card .progress{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #1e1e1e;
+  border-radius: 10px;
+  padding: 3px 15px;
+}
+.portoitems .card .info{
+  background-color: #ffbb0b;
+}
+
+.portoitems .card .image{
+  height: 230px;
+  width: 100%;
+  overflow: hidden;
+  /* background-color: blue; */
+  border-bottom: 1px solid #a8aeff;
+  display: flex;
+}
+.portoitems .card .image img{
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  object-fit: cover;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+.portoitems .card .image:hover img{
+  height: auto;
+  transform: scale(1);
+
+}
+img.judul {
+  max-width: 70px;
+}
+.porto,
+.experience {
+  text-align: center;
+  padding-top: 50px;
+}
+.porto img {
+  max-width: 42px;
+}
+.itemicon {
+  display: inline-block;
+  box-shadow: 0px 2px 15px 1px #cea8ff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  line-height: 42px;
+}
+.portoweb {
+  box-shadow: 0px 2px 15px 1px #cea8ff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.portoweb img {
+  max-width: 43px;
+  margin-right: 20px;
+}
+.together{
+  background-image: linear-gradient(to top, #1e1e1e, #121212);
+  padding: 80px 0px;
+  position: relative;
+}
+.together .kotaktogether{
+  position: absolute;
+  right: 0;
+  top: 10%;
+  height: 70%;
+  width: 7%;
+  background-color: rgba(200,200,200,0.1);
+}
+.together .row{
+  margin: 0 auto;
+}
+.together .image{
+  position: relative;
+}
+.together .image img{
+  max-height : 500px;
+  /* border: 1px solid white; */
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.together .konten{
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  left: 0;
+  color: white;
+  text-transform: capitalize;
+}
+.together .konten p{
+  margin-top: 250px;
+  font-weight: 300 !important; 
+}
+.together .social{
+  color: white
+}
+.together .social .kotakgrid{
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.together .social a{
+  font-size: 28px;
+  color: white;
+  transition:0.4s;
+}
+.together .social .kotakgrid::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #ffbb0b;
+  color: #1e1e1e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(-125%) skewX(20deg);
+  transition: 0.3s;
+  z-index: -1;
+}
+.together .social .kotakgrid:hover::after {
+  transform: translateX(0%) ;
+}
+.together .social .kotakgrid:hover a{
+  color: #1e1e1e;
+}
+.together .social .kotakgrid:hover p{
+  color: #1e1e1e;
+}
+
+/* .together .social div:hover a{
+  transform: translateX(10px);
+  padding-left: 10px;
+
+  color: #a8aeff;
+} */
+
+#identitas{
+  background-image: linear-gradient(to bottom, #1e1e1e, #121212);
+padding: 40px 0px;
+}
+#identitas .row{
+  background-color: rgba(200,200,200, 0.1);
+  padding: 30px 0px;
+  color: white;
+}
+#identitas .row h2{
+  transform: translateY(0px);
+  transition: 0.3s;
+  color: #ffbb0b;
+}
+#identitas .row h2:hover{
+  transform: translateY(-5px)
+}
+/* ------------------------------------------------------------------------------------------------------ */
+/* certif */
+/* #certificate {
+  padding: 60px 0px;
+  background-image: linear-gradient(to bottom, #1e1e1e, #121212);
+}
+#certificate .col-md-4{
+  height: 300px;
+  overflow: hidden;
+}
+#certificate .col-md-4 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: 0.3s;
+}
+#certificate .col-md-4 img::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  bak
+}
+#certificate .col-md-4:hover img{
+  height: auto;
+  width: 100%;
+  object-fit: contains;
+  transform: scale(0.94)
+
+} */
+/* ---------------------------------------------------------------------------------------------------- */
+/* kontak */
+/* .kontak {
+  border-radius: 10px;
+  padding: 30px 0px;
+}
+
+.kontak table tr td {
+  padding: 5px 0px 5px 20px;
+}
+.kontak table tr td img {
+  max-height: 38px;
+}
+.kontak table tr td:nth-child(1) {
+  text-align: center;
+}
+.kontak h2 {
+  color: #907cff;
+}
+.kontak a {
+  color: #907cff;
+}
+.contactme {
+  flex-direction: column-reverse;
+}
+.contactme table {
+  margin: 0 auto;
+} */
+/* ---------------------------------------------------------------------------------------------------- */
+/* FOOTER */
+.footer {
+  /* margin-top: 80px; */
+  /* background-color: rgb(250, 250, 250); */
+  background-color: #121212;
+  padding-top: 20px;
+  font-size: 14px;
+  width: 100%;
+  color: white;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.footer span:nth-child(2) {
+  margin-right: auto;
+}
+/* ---------------------------------------------------------------------------------------------------- */
+.modal .modal-content{
+  background-color: #1e1e1e;
+  color: white;
+}
+.modal .modal-content button{
+  background-color: white;
+}
+.modal table tr {
+  padding-bottom: 20px;
+}
+.modal table tr td {
+  align-items: flex-start;
+  color: white;
+
+}
+.modal table tr td a{
+  color: #ffbb0b;
+}
+.modal table tr td:nth-child(1) {
+  color: #907cff;
+}
+/* ANIMASI */
+@keyframes navlink {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  100% {
+    opacity: 1;
+    width: 80%;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@media (min-width: 992px) {
+  .hoverlink:hover::after {
+    content: "";
+    display: block;
+    margin: auto;
+    margin-bottom: -14px;
+    padding-bottom: 10px;
+    width: 80%;
+    border-bottom: 4px solid #ffbb0b;
+    animation-name: navlink;
+    animation-duration: 0.4s;
+  }
+  .myprofile {
+    text-align: start;
+  }
+  .panel {
+    height: 80px;
+  }
+  .panel span {
+    display: inline;
+  }
+  .aboutme .konten {
+    text-align: start;
+  }
+  .bingkaioren {
+    background-color: #ffbb0b;
+    text-align: center;
+  }
+  .work {
+    text-align: start;
+  }
+  .work ul {
+    list-style: circle;
+  }
+}
+/* ---------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 575.98px) {
+  .hoverlink {
+    margin-top: 20px;
+  }
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .myprofile {
+    padding-top: 40px;
+  }
+  .myprofile p {
+    font-size: 14px;
+  }
+
+  .myprofile h1 {
+    font-weight: bold;
+    font-size: 34px;
+  }
+  .imageprofile {
+    width: 100%;
+  }
+  .imageprofile img {
+    max-width: 170px;
+    margin-left: 20px;
+  }
+  .imageprofile button {
+    font-size: 12px;
+  }
+  .imageprofile button.profesi {
+    top: 150px;
+  }
+
+  .imageprofile button.location {
+    top: 100px;
+  }
+  .imageprofile button.usia {
+    top: 100px;
+  }
+  .panel {
+    border-radius: 10px;
+    width: 95%;
+    margin: 0 auto;
+    min-height: 260px;
+  }
+  .aboutme img {
+    max-width: 200px;
+  }
+  #project {
+    padding: 30px 20px;
+  }
+  #project .image:nth-child(2) {
+    margin: 30px 0px;
+  }
+  #certificate,
+  #experience {
+    /* margin-top: 30px; */
+    padding: 30px 20px;
+  }
+  .kotaksertif .image:nth-child(2) {
+    margin: 30px 0px;
+  }
+  .porto {
+    margin-bottom: 30px;
+  }
+  .porto p {
+    font-size: 14px;
+  }
+  .portoweb img {
+    max-width: 28px;
+  }
+
+  .experience p {
+    font-size: 14px;
+  }
+  .work {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .work h5 {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .work ul {
+    text-align: start;
+  }
+
+  .certificate .certif {
+    display: flex !important;
+    align-items: center !important;
+    width: 90%;
+    height: 360px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .certificate .certif img {
+    width: 100%;
+  }
+  .certificate p {
+    font-size: 14px;
+  }
+
+  .contactme p,
+  .footer p {
+    font-size: 14px;
+  }
+}
