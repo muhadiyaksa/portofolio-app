@@ -165,20 +165,44 @@ img.small {
   background-color: rgba(200, 200, 200, 0.1);
   /* animation: geserKotak 2s infinite; */
 }
-.jumbotron .animate-text h2:nth-child(1) { animation-delay: 0s; }
-.jumbotron .animate-text h2:nth-child(2) { animation-delay: 3s; }
-.jumbotron .animate-text h2:nth-child(3) { animation-delay: 6s; }
-.jumbotron .animate-text h2{
+.jumbotron .animate-text h2:nth-child(1) {
+  animation-delay: 0s;
+}
+.jumbotron .animate-text h2:nth-child(2) {
+  animation-delay: 3s;
+}
+.jumbotron .animate-text h2:nth-child(3) {
+  animation-delay: 6s;
+}
+.jumbotron .animate-text h2:nth-child(4) {
+  animation-delay: 9s;
+}
+.jumbotron .animate-text h2 {
   opacity: 0;
   overflow: hidden;
-  animation: animate 9s linear infinite 0s;
+  animation: animate 12s linear infinite 0s;
+  font-size: 24px;
 }
 @-webkit-keyframes animate {
-  0%  { opacity: 0; }
-  10%  { opacity: 0; -webkit-transform: translateY(-30px); }
-  15%  { opacity: 1; -webkit-transform: translateY(0px); }
-  20% { opacity: 1; -webkit-transform: translateY(0px); }
-  25% { opacity: 0; -webkit-transform: translateY(30px); }
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+  }
+  15% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+  20% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+  25% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+  }
 }
 
 .myprofile {
@@ -194,20 +218,22 @@ img.small {
 .myprofile button {
   margin-top: 20px;
 }
-.imageprofile {
+
+.imageprofile .image {
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  text-align: center;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  z-index: 0;
+  margin-top: 20px;
+  object-position: center;
 }
-.imageprofile img {
-  max-width: 370px;
+.imageprofile .image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
   transition: 0.3s;
   text-align: center;
   z-index: 2;
@@ -223,7 +249,7 @@ img.small {
   z-index: 0;
   top: 0px;
   left: 0;
-  right: 0; 
+  right: 0;
   font-size: 82px;
   opacity: 0.1;
   font-weight: 300;
@@ -231,7 +257,7 @@ img.small {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
 }
-.imageprofile span{
+.imageprofile span {
   font-size: 90px;
   position: absolute;
   z-index: 0;
@@ -244,14 +270,14 @@ img.small {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
-.imageprofile h2{
+.imageprofile h2 {
   font-size: 32px;
   position: absolute;
   z-index: 3;
   bottom: 10px;
   left: 30%;
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 /* .imageprofile button.location {
   top: 250px;
@@ -264,11 +290,11 @@ img.small {
 
 .imageprofile button.usia {
   top: 150px;
-  left: 50px; */
-}
+  left: 50px; 
+}*/
 /* ------------------------------------------------------------------------------------------------------ */
 /* PANEL */
-#navcenter{
+#navcenter {
   /* background-image: linear-gradient(to top, #1e1e1e, #121212); */
   background-color: red;
   padding: 20px 0;
@@ -278,7 +304,7 @@ img.small {
   z-index: 3;
   position: relative;
 }
-.kotakpanel{
+.kotakpanel {
   position: absolute;
   top: 0;
   left: 0;
@@ -288,7 +314,7 @@ img.small {
   background-color: rgba(200, 200, 200, 0.1);
 }
 .panel img.iconPanel {
-  max-width: 12px!important;
+  max-width: 12px !important;
 }
 .panel {
   /* box-shadow: 0px 2px 15px 1px #cea8ff; */
@@ -344,6 +370,11 @@ img.small {
 .aboutme {
   padding-top: 100px;
 }
+.aboutme .vector {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
 .aboutme img {
   max-width: 450px;
 }
@@ -358,9 +389,10 @@ img.small {
   position: relative;
   transition: 0.3s;
   overflow: hidden;
+  font-size: 13px;
 }
 .aboutme .kotakgrid::after {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 100%;
@@ -376,33 +408,31 @@ img.small {
   z-index: -1;
 }
 .aboutme .kotakgrid:hover::after {
-  transform: translateX(0%) ;
+  transform: translateX(0%);
 }
-.aboutme .kotakgrid:hover{
+.aboutme .kotakgrid:hover {
   color: #1e1e1e;
 }
 .aboutme .konten {
   text-align: center;
-  padding-left: 50px;
+  padding: 0px 50px;
   align-self: center;
 }
 .aboutme .konten p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   /* text-align: justify; */
   margin: 0;
-  font-size: 14px;
+  font-size: 13px;
   margin-bottom: 20px;
-  padding-right: 100px;
-  font-weight: 300!important;
+  padding-right: 0px;
+  font-weight: 300 !important;
   color: white;
 }
-.aboutme .konten table{
+.aboutme .konten table {
   color: white;
   margin-top: 30px;
 }
-.aboutme .konten td{
-  padding-right: 100px;
-}
+
 /* ------------------------------------------------------------------------------------------------------ */
 /* PORTOFOLIO */
 #portofolio,
@@ -411,39 +441,40 @@ img.small {
   padding: 60px 0px;
   position: relative;
 }
-#portofolio .kotakporto{
+#portofolio .kotakporto {
   position: absolute;
   left: 0;
   top: 80px;
   height: 70%;
   width: 50px;
-  background-color: rgba(200,200,200, 0.1);
+  background-color: rgba(200, 200, 200, 0.1);
   border-radius: none;
 }
-.portoitems .card{
+.portoitems .card {
   background-image: linear-gradient(to top, #1e1e1e, #121212);
   border: 2px solid white;
   padding: 10px;
   color: white;
   position: relative;
 }
-.portoitems .card p{
+.portoitems .card p {
   font-size: 14px;
 }
 .portoitems .card .info,
-.portoitems .card .progress{
+.portoitems .card .progress {
   position: absolute;
   top: 15px;
   left: 15px;
   color: #1e1e1e;
   border-radius: 10px;
   padding: 3px 15px;
+  font-size: 14px;
 }
-.portoitems .card .info{
+.portoitems .card .info {
   background-color: #ffbb0b;
 }
 
-.portoitems .card .image{
+.portoitems .card .image {
   height: 230px;
   width: 100%;
   overflow: hidden;
@@ -451,7 +482,7 @@ img.small {
   border-bottom: 1px solid #a8aeff;
   display: flex;
 }
-.portoitems .card .image img{
+.portoitems .card .image img {
   height: 100%;
   width: 100%;
   align-self: center;
@@ -459,10 +490,9 @@ img.small {
   transition: 0.3s;
   transform: scale(1.1);
 }
-.portoitems .card .image:hover img{
+.portoitems .card .image:hover img {
   height: auto;
   transform: scale(1);
-
 }
 img.judul {
   max-width: 70px;
@@ -491,33 +521,33 @@ img.judul {
   max-width: 43px;
   margin-right: 20px;
 }
-.together{
+.together {
   background-image: linear-gradient(to top, #1e1e1e, #121212);
   padding: 80px 0px;
   position: relative;
 }
-.together .kotaktogether{
+.together .kotaktogether {
   position: absolute;
   right: 0;
   top: 10%;
   height: 70%;
   width: 7%;
-  background-color: rgba(200,200,200,0.1);
+  background-color: rgba(200, 200, 200, 0.1);
 }
-.together .row{
+.together .row {
   margin: 0 auto;
 }
-.together .image{
+.together .image {
   position: relative;
 }
-.together .image img{
-  max-height : 500px;
+.together .image img {
+  max-height: 500px;
   /* border: 1px solid white; */
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
-.together .konten{
+.together .konten {
   position: absolute;
   top: 20%;
   text-align: center;
@@ -525,14 +555,14 @@ img.judul {
   color: white;
   text-transform: capitalize;
 }
-.together .konten p{
+.together .konten p {
   margin-top: 250px;
-  font-weight: 300 !important; 
+  font-weight: 300 !important;
 }
-.together .social{
-  color: white
+.together .social {
+  color: white;
 }
-.together .social .kotakgrid{
+.together .social .kotakgrid {
   border: 2px solid white;
   display: flex;
   flex-direction: column;
@@ -542,13 +572,13 @@ img.judul {
   transition: 0.3s;
   overflow: hidden;
 }
-.together .social a{
+.together .social a {
   font-size: 28px;
   color: white;
-  transition:0.4s;
+  transition: 0.4s;
 }
 .together .social .kotakgrid::after {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 100%;
@@ -564,12 +594,12 @@ img.judul {
   z-index: -1;
 }
 .together .social .kotakgrid:hover::after {
-  transform: translateX(0%) ;
+  transform: translateX(0%);
 }
-.together .social .kotakgrid:hover a{
+.together .social .kotakgrid:hover a {
   color: #1e1e1e;
 }
-.together .social .kotakgrid:hover p{
+.together .social .kotakgrid:hover p {
   color: #1e1e1e;
 }
 
@@ -580,22 +610,22 @@ img.judul {
   color: #a8aeff;
 } */
 
-#identitas{
+#identitas {
   background-image: linear-gradient(to bottom, #1e1e1e, #121212);
-padding: 40px 0px;
+  padding: 40px 0px;
 }
-#identitas .row{
-  background-color: rgba(200,200,200, 0.1);
+#identitas .row {
+  background-color: rgba(200, 200, 200, 0.1);
   padding: 30px 0px;
   color: white;
 }
-#identitas .row h2{
+#identitas .row h2 {
   transform: translateY(0px);
   transition: 0.3s;
   color: #ffbb0b;
 }
-#identitas .row h2:hover{
-  transform: translateY(-5px)
+#identitas .row h2:hover {
+  transform: translateY(-5px);
 }
 /* ------------------------------------------------------------------------------------------------------ */
 /* certif */
@@ -677,11 +707,11 @@ padding: 40px 0px;
   margin-right: auto;
 }
 /* ---------------------------------------------------------------------------------------------------- */
-.modal .modal-content{
+.modal .modal-content {
   background-color: #1e1e1e;
   color: white;
 }
-.modal .modal-content button{
+.modal .modal-content button {
   background-color: white;
 }
 .modal table tr {
@@ -690,9 +720,8 @@ padding: 40px 0px;
 .modal table tr td {
   align-items: flex-start;
   color: white;
-
 }
-.modal table tr td a{
+.modal table tr td a {
   color: #ffbb0b;
 }
 .modal table tr td:nth-child(1) {
@@ -714,7 +743,43 @@ padding: 40px 0px;
 /* ---------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
 
+@media (min-width: 768px) {
+  .jumbotron .animate-text h2 {
+    font-size: 32px;
+  }
+  .imageprofile .image {
+    height: 300px;
+    width: 300px;
+  }
+}
 @media (min-width: 992px) {
+  .imageprofile {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .imageprofile .image {
+    height: 340px;
+    width: 340px;
+  }
+  .aboutme .konten td {
+    padding-right: 100px;
+  }
+  .aboutme .konten p {
+    font-family: "Poppins", sans-serif;
+    /* text-align: justify; */
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding-right: 100px;
+  }
   .hoverlink:hover::after {
     content: "";
     display: block;
@@ -772,10 +837,7 @@ padding: 40px 0px;
   .imageprofile {
     width: 100%;
   }
-  .imageprofile img {
-    max-width: 170px;
-    margin-left: 20px;
-  }
+
   .imageprofile button {
     font-size: 12px;
   }
